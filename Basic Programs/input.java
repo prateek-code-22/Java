@@ -12,7 +12,6 @@ public class input {
             System.out.println(name);
         }
 
-
     }
     
 }

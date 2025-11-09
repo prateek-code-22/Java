@@ -10,8 +10,6 @@ public class conditional {
         }
 
 
-
-
         //switch
         int day = 1;
 

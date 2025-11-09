@@ -20,7 +20,7 @@ public static void main(String [] args){
     int phone = 1234354324;
     long phone  = 12354325325423L;
     float f = 123.43F;
-    char letter = 'ada';
+    char letter = 'a';
     boolean = false;
     */
 
@@ -32,8 +32,6 @@ public static void main(String [] args){
     String friend = new String("abhi");
     System.out.println(friend);
     System.out.print(name.length());
-
-     
 
 }
 
