@@ -12,6 +12,17 @@ public class input {
             System.out.println(name);
         }
 
+        try (Scanner sc = new Scanner(System.in)) {
+            int n = sc.nextInt();                // read first line (5)
+            for (int i = 0; i < n; i++) {
+                int a = sc.nextInt();            // reads first number of the pair
+                int b = sc.nextInt();            // reads second number of the pair
+                // process the pair (here we just print)
+                System.out.println(a + " " + b);
+            }
+        }
+
+
     }
     
 }
