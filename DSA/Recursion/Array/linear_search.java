@@ -35,6 +35,7 @@ public class linear_search {
         // return the answer list containing all the index of target element
         // method 1: - declare the arraylist outside function add when found.
         // method 2: - return type as arraylist for function.
+        // method 3: - without answer list argument
 
         // method 1
         
@@ -65,8 +66,27 @@ public class linear_search {
             return FindAllIndex2(arr, target, index+1, list);
         }
 
+        // method 3
+        static ArrayList<Integer> FindAllIndex3(int [] arr, int target, int index){
+            // new for each function call
+            ArrayList<Integer> list = new ArrayList<>();
 
+            if(index == arr.length){
+                return list;
+            }
 
+            if(arr[index] == target){
+                list.add(index);
+            }
+
+            // add the res list from the below function call
+            ArrayList<Integer> fromCurrentCall = FindAllIndex3(arr, target, index+1);
+            
+            list.addAll(fromCurrentCall);
+
+            return list;
+
+        }
 
 
 
