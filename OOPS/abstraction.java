@@ -1,6 +1,5 @@
 package OOPS;
 
-
 abstract class Animal{
     abstract public void walk();
 }
@@ -10,7 +9,6 @@ class Horse extends Animal{
         System.out.println("WaLK on 4 legs");
     }
 }
-
 
 class Hen extends Animal{
     public void walk(){
