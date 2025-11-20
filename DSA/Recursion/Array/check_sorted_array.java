@@ -1,5 +1,3 @@
-package DSA.Recursion.Array;
-
 public class check_sorted_array {
     public static void main(String [] args){
         int [] arr = {1,2,3,4};

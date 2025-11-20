@@ -1,4 +1,3 @@
-package DSA.Recursion.Array;
 import java.util.ArrayList;
 
 public class linear_search {
