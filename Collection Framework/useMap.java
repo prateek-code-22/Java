@@ -15,6 +15,11 @@ public class useMap {
 
         System.out.println(numbers);
 
+        // create map int:int
+        for(int num: numbers){
+            map.put(numbers, map.getOrDefault(numbers, 0) + 1);
+        }
+
         // will override the value of Two
         if(!numbers.containsKey("Two")){
             numbers.put("Two", 23);

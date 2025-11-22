@@ -52,12 +52,4 @@ public class premutation {
 
     } 
 
-
-
-
-
-
-
-
-
 }
