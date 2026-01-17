@@ -12,7 +12,7 @@ public class member_inner_Class {
 }
 
 // calling member inner class - by creating the obj of outer class and then obj of inner class
-/* public class objectClass{
+public class objectClass{
     public static void main(String[] args) {
         member_inner_Class outerobj = new member_inner_Class();
 
@@ -20,4 +20,3 @@ public class member_inner_Class {
         innerObj.print();
     }
 }
-*/

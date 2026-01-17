@@ -1,7 +1,10 @@
 // Generic class is defined by - <>
 
 package Classes;
+import java.util.ArrayList;
+import java.util.List;
 
+//generic class def
 public class Generic_Class<T> {
     T value;
 
@@ -17,6 +20,15 @@ public class Generic_Class<T> {
     public <T> void GM(T inp){
         System.out.println("hii"+ inp);
     }
+
+    //wildcard method used with collections
+    public void wildcard(List<?> source){}
+
+    // wildcard method accepts the 2 list of any data type as para.
+    public void computeList(List<? super Number> source, List<? extends Number> desti){
+
+    }  
+
 }
 
 
@@ -42,6 +54,14 @@ class Main{
         Integer v = obj.getValue();
         
         if(v == 1) System.out.println(true);
+        
+        //wildcard calling
+        List<Integer> sourceList = new ArrayList<>();
+        List<Float> desti = new ArrayList<>();
+    
+        Generic_Class gc = new Generic_Class<>();
+        gc.computeList(sourceList, desti);
+    
     }
 }
 

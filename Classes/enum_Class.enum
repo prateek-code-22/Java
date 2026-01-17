@@ -1,0 +1,59 @@
+package Classes;
+
+public enum EnumSample {
+    customer;
+    admin,
+
+    //abstract method used
+    db{
+        public void dummyMethod2(){
+            System.out.print("db present");
+        }
+    },
+
+
+    //method override
+    client{
+        @Override
+        public void dummyMethods(){
+            System.out.print("send by client");
+        }
+    };
+  
+    
+    //dummy method to override
+    public void dummyMethods(){
+        System.out.print("inside the dummy method"); 
+    }
+
+
+    //abstract method, all the enum value have to use this method
+    public abstract void dummyMethod2();
+
+}
+ 
+
+//common function of enum
+// values() - iterate on values and return array of enum value 
+// Ordinal() - prints index like for customer - 0, admin - 1
+// ValueOf() - iterate and check for asked value in enum
+// name() - returns the name if found 
+
+public class Main(){
+    public static void main(String [] args){
+        
+        //iterate the all the values in enum and print the ordinal index
+        for(enumSample sample: enumSample.values()){
+            System.out.print(sample.Ordinal());
+        } 
+
+        // check in enum if customer is present and print the value
+        enumSample enumVar = enumSample.value.Of("customer");
+            System.out.print(enumVar.name());
+
+        //calling the methods overriden 
+        EnumSample abd = EnumSample.client;
+        abd.dummyMethods();
+        
+    }
+}   
