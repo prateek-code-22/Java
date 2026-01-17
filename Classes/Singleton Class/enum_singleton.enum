@@ -1,0 +1,6 @@
+package Classes.Singleton Class;
+
+//already final, static cannot be inherited.
+public class enum {
+    INSTANCE;
+}
