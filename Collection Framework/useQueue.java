@@ -24,7 +24,7 @@ import java.util.Queue;
 public class useQueue {
     public static void main(String [] args){
         
-        // queue is implemented by LL, so it has the methods
+        // queue is just the interface implemented by LL, so it has the methods
         Queue<Integer> queue = new LinkedList<>();
 
         // to add the elements in queue
