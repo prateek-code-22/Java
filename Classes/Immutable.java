@@ -30,7 +30,7 @@ final class Immutable_class {
 
 
 
-public class Main{
+public class Immutable{
     public static void main(String[] args) {
         List<Object> petName = new ArrayList<>();
         petName.add("sj");
