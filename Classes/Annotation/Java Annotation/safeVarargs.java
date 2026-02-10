@@ -9,6 +9,8 @@ public class safeVarargs {
 
 public class Log{
     // method takes the lognumberlist in integer
+
+    @SafeVarargs // to avoid heap pollution warning
     public static void printLogValues(List<Integer>... logNumberList){
         Object[] objectList = logNumberList;
 
@@ -18,3 +20,4 @@ public class Log{
     }
 }
 
+ 
