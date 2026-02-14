@@ -6,6 +6,11 @@ public class loops {
             System.out.println(i);
         }
 
+        //for each loop
+        int[] valArray = {1,2,3,4,5};
+        for(int val : valArray){
+            System.out.println(val);
+        }
         
         //while loop
         int j = 100;
@@ -14,7 +19,7 @@ public class loops {
             j --;
         }
 
-        //do while loop
+        //do while loop (at least one time loop will run)
         int k =100;
         do{
             System.out.println(k);
