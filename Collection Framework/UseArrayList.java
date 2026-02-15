@@ -75,11 +75,21 @@ public class UseArrayList {
             System.out.println("foreach element"+ element);
         }
 
+        //using foreach method
+        list.forEach(val -> System.out.println(val));
+
         // using iterator
-        Iterator<Integer> it = list.iterator();
-        while (it.hasNext()){
-            System.out.println(it.next());
+        Iterator<Integer> iterateList = list.iterator();
+        while (iterateList.hasNext()){
+            //each val
+            int val = iterateList.next();
+            System.out.println(val);
+            if(val == 3){
+                //removes 3 from list
+                iterateList.remove();
+            }
         }
+        
 
     }
 }

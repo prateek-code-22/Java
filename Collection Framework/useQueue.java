@@ -6,8 +6,7 @@
  - peek     = top element in stack, returns null if queue is empty
  - element  = returns head and throws error is queue is empty.
 
- Methods of Queue:
-
+Methods of Queue:
 add() - Inserts the specified element into the queue. If the task is successful, add() returns true, if not it throws an exception.
 offer() - Inserts the specified element into the queue. If the task is successful, offer() returns true, if not it returns false.
 element() - Returns the head of the queue. Throws an exception if the queue is empty.

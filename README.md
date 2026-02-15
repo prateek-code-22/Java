@@ -54,6 +54,16 @@ Singleton pattern implementations:
 - [Lazy_init.java](Classes/Singleton%20Class/Lazy_init.java) - Lazy initialization singleton
 - [synchronous.java](Classes/Singleton%20Class/synchronous.java) - Synchronized singleton
 
+#### 2.3 Annotation
+Annotation-related examples:
+- [customAnnotation.java](Classes/Annotation/customAnnotation.java) - custom annotation example
+- [target.java](Classes/Annotation/Meta%20Annotation/target.java) - meta-annotation example
+- [deprecated.java](Classes/Annotation/Java%20Annotation/deprecated.java) - `@Deprecated` example
+- [FunctionInterface.java](Classes/Annotation/Java%20Annotation/FunctionInterface.java) - `@FunctionalInterface` example
+- [override.java](Classes/Annotation/Java%20Annotation/override.java) - `@Override` example
+- [safeVarargs.java](Classes/Annotation/Java%20Annotation/safeVarargs.java) - `@SafeVarargs` example
+- [supressWarning.java](Classes/Annotation/Java%20Annotation/supressWarning.java) - `@SuppressWarnings` example
+
 ### 3. Collection Framework
 Java Collections API:
 - [CollectionClass.java](Collection%20Framework/CollectionClass.java) - Collection interface and implementations
@@ -67,7 +77,14 @@ Java Collections API:
 - [useSet.java](Collection%20Framework/useSet.java) - Set interface (HashSet, TreeSet, etc.)
 - [useStack.java](Collection%20Framework/useStack.java) - Stack data structure
 
-### 4. OOPS
+### 4. Exceptional Handling
+Exception handling examples:
+- [CheckedException.java](Exceptional%20Handling/CheckedException.java) - checked exception example
+- [UncheckedException.java](Exceptional%20Handling/UncheckedException.java) - unchecked exception example
+- [customException.java](Exceptional%20Handling/customException.java) - custom exception implementation
+- [Handling.java](Exceptional%20Handling/Handling.java) - exception handling patterns
+
+### 5. OOPS
 Object-Oriented Programming Principles:
 - [abstraction.java](OOPS/abstraction.java) - Data abstraction
 - [bank.java](OOPS/bank.java) - Banking system example with OOP
@@ -91,4 +108,5 @@ Object-Oriented Programming Principles:
 - **Singleton Pattern**: Various singleton implementations
 - **Collections**: Lists, Sets, Maps, Queues, Stacks
 - **Design Patterns**: Singleton, functional interfaces
+
 

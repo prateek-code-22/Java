@@ -1,5 +1,8 @@
-// double ended queue 
+// double ended queue (arraydeque)
 // insertion and deletion from both ends.
+//insertion - O(1) most time, O(N) - when queue size reached threshold.
+//search - O(1)
+//deletion - O(1)
 
 import java.util.ArrayDeque;
 

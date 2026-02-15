@@ -7,13 +7,15 @@ peek() - return the head of the queue. Time Complexity: O(1)
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
-import java.util.Queue;
 
 public class usePriorityQueue {
     public static void main(String [] args){
         
         // pq is priority queue & comparator is used to define the priority to highest element first
-        Queue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
+
+        // max pq
+        PriorityQueue<Integer> maxpq = new PriorityQueue<>((Integer a, Integer b) -> b-a);
         
         // using the PQ package, without argument so, smallest element first.
         // PriorityQueue pq = new PriorityQueue<>();

@@ -24,9 +24,10 @@ public class CollectionClass {
     
         // sorting
         Collections.sort(list);
+        
         // in reverse=desc
         Collections.sort(list, Comparator.reverseOrder());
-
+ 
         
     }    
 }
