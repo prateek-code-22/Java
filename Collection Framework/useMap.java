@@ -2,12 +2,32 @@
 // if again try to enter the existing key then the value of that key will get updated.
 
 
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class useMap {
     public static void main(String [] args){
+
+        //HashMap - not threadsafe
         Map<String, Integer> numbers = new HashMap<>();
+
+        //HashTable is thread safe
+
+        //LinkedHashMap not thread safe, maintains order, insertion/access.
+        Map<String, Integer> num = new LinkedHashMap<>();
+
+        //to make thread safe
+        Map<String, Integer> threadSafe= Collections.synchronizedMap(new LinkedHashMap<>());
+
+        //for access order(least used to most used)
+        Map<String, Integer> accessorder = new LinkedHashMap<>(16, .75F,true);
+
+        num.put("hi", 1);        
+        num.put("hey", 2);        
+        num.put("bye", 3);        
+
 
         numbers.put("One", 1);
         numbers.put("Two", 2);

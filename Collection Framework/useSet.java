@@ -9,7 +9,6 @@ public class useSet {
         // Set<Integer> set = new LinkedHashSet<>(); - order will be mainted
         // Set<Integer> set = new TreeSet<>(); - unique and BST(sorted) - O(logn)
     
-
         // adds the element in set and if already present no operation.
         set.add(25);
         set.add(45);
