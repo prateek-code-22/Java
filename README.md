@@ -77,14 +77,27 @@ Java Collections API:
 - [useSet.java](Collection%20Framework/useSet.java) - Set interface (HashSet, TreeSet, etc.)
 - [useStack.java](Collection%20Framework/useStack.java) - Stack data structure
 
-### 4. Exceptional Handling
+### 4. Multithreading
+Concurrent programming and thread management:
+- [multithreading.java](Multithreading/multithreading.java) - Basic multithreading concepts
+- [Join.java](Multithreading/Join.java) - Thread join operation
+- [MonitorLock.java](Multithreading/MonitorLock.java) - Monitor lock and synchronization
+- [ProducerConsumer.java](Multithreading/ProducerConsumer.java) - Producer-consumer pattern
+
+### 4.1 Locks
+Advanced locking mechanisms:
+
+- [main.java](Multithreading/Locks/ReadWriteLock/main.java) - ReadWriteLock example
+- [Main.java](Multithreading/Locks/ReetrantLock/Main.java) - ReentrantLock example
+
+### 5. Exceptional Handling
 Exception handling examples:
 - [CheckedException.java](Exceptional%20Handling/CheckedException.java) - checked exception example
 - [UncheckedException.java](Exceptional%20Handling/UncheckedException.java) - unchecked exception example
 - [customException.java](Exceptional%20Handling/customException.java) - custom exception implementation
 - [Handling.java](Exceptional%20Handling/Handling.java) - exception handling patterns
 
-### 5. OOPS
+### 6. OOPS
 Object-Oriented Programming Principles:
 - [abstraction.java](OOPS/abstraction.java) - Data abstraction
 - [bank.java](OOPS/bank.java) - Banking system example with OOP
@@ -100,13 +113,15 @@ Object-Oriented Programming Principles:
 - **Core Java Basics**: Variables, data types, operators, loops, conditionals
 - **Methods & Functions**: Method definition, parameters, return types
 - **Array & String**: Array operations, string manipulation
-- **Exception Handling**: Try-catch-finally, exception propagation
+- **Exception Handling**: Try-catch-finally, checked/unchecked exceptions, custom exceptions
 - **OOP Concepts**: Classes, inheritance, polymorphism, encapsulation, abstraction
 - **Advanced Classes**: Abstract classes, interfaces, inner classes, anonymous classes
 - **Generics**: Type-safe generic programming
 - **Reflection**: Runtime class inspection and manipulation
-- **Singleton Pattern**: Various singleton implementations
-- **Collections**: Lists, Sets, Maps, Queues, Stacks
+- **Annotations**: Built-in and custom annotations, meta-annotations
+- **Singleton Pattern**: Various singleton implementations (Eager, Lazy, Bill Pugh, Double Locking, Enum)
+- **Collections**: Lists, Sets, Maps, Queues, Stacks, Arrays
+- **Multithreading**: Thread creation, synchronization, locks (ReentrantLock, ReadWriteLock), producer-consumer pattern
 - **Design Patterns**: Singleton, functional interfaces
 
 
