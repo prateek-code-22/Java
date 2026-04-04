@@ -32,6 +32,7 @@ Object-oriented programming with classes and related concepts:
 - [Nested_Static_Class.java](Classes/Nested_Static_Class.java) - Static nested classes
 - [POJO.java](Classes/POJO.java) - Plain Old Java Objects
 - [Reflection.java](Classes/Reflection.java) - Java reflection API
+- [Sealed_Class.java](Classes/Sealed_Class.java) - Sealed classes - restrict which classes can extend a class
 - [sub_super_Class.java](Classes/sub_super_Class.java) - Inheritance with superclass and subclass
 
 #### 2.1 Interface
@@ -68,14 +69,17 @@ Annotation-related examples:
 Java Collections API:
 - [CollectionClass.java](Collection%20Framework/CollectionClass.java) - Collection interface and implementations
 - [matrix.java](Collection%20Framework/matrix.java) - 2D arrays and matrix operations
+- [StreamAPI.java](Collection%20Framework/StreamAPI.java) - Stream API for functional-style operations on collections
 - [useArray.java](Collection%20Framework/useArray.java) - Array usage and operations
 - [useArrayDeque.java](Collection%20Framework/useArrayDeque.java) - ArrayDeque (double-ended queue)
 - [UseArrayList.java](Collection%20Framework/UseArrayList.java) - ArrayList usage
 - [useMap.java](Collection%20Framework/useMap.java) - Map interface (HashMap, TreeMap, etc.)
+- [useParallelStream.java](Collection%20Framework/useParallelStream.java) - Parallel streams for concurrent collection processing
 - [usePriorityQueue.java](Collection%20Framework/usePriorityQueue.java) - Priority queue implementation
 - [useQueue.java](Collection%20Framework/useQueue.java) - Queue interface and implementations
 - [useSet.java](Collection%20Framework/useSet.java) - Set interface (HashSet, TreeSet, etc.)
 - [useStack.java](Collection%20Framework/useStack.java) - Stack data structure
+- [useTreeMap.java](Collection%20Framework/useTreeMap.java) - TreeMap - sorted map implementation
 
 ### 4. Multithreading
 Concurrent programming and thread management:
@@ -83,12 +87,27 @@ Concurrent programming and thread management:
 - [Join.java](Multithreading/Join.java) - Thread join operation
 - [MonitorLock.java](Multithreading/MonitorLock.java) - Monitor lock and synchronization
 - [ProducerConsumer.java](Multithreading/ProducerConsumer.java) - Producer-consumer pattern
+- [ThreadLocalExample.java](Multithreading/ThreadLocalExample.java) - ThreadLocal variables for thread-specific storage
 
-### 4.1 Locks
+#### 4.1 CompletableFuture
+Asynchronous computation and completion:
+- [CompletableFutureExample.java](Multithreading/CompletableFuture/CompletableFutureExample.java) - CompletableFuture for asynchronous computation
+
+#### 4.2 Lock-free CAS
+Atomic operations and compare-and-swap:
+- [useAtomicInterger.java](Multithreading/Lock-free%20CAS/useAtomicInterger.java) - Atomic integer for lock-free thread-safe operations
+
+#### 4.3 Locks
 Advanced locking mechanisms:
-
 - [main.java](Multithreading/Locks/ReadWriteLock/main.java) - ReadWriteLock example
 - [Main.java](Multithreading/Locks/ReetrantLock/Main.java) - ReentrantLock example
+
+#### 4.4 ThreadPool
+Executor framework and thread pooling:
+- [ExecutorTypes.java](Multithreading/ThreadPool/ExecutorTypes.java) - Different executor service types (Fixed, Cached, Scheduled)
+- [ScheduledThread.java](Multithreading/ThreadPool/ScheduledThread.java) - Scheduled thread pool executor for delayed/periodic tasks
+- [shutdownExecutor.java](Multithreading/ThreadPool/shutdownExecutor.java) - Executor shutdown and cleanup patterns
+- [ThreadExecutor.java](Multithreading/ThreadPool/ThreadExecutor.java) - Basic executor implementation and usage
 
 ### 5. Exceptional Handling
 Exception handling examples:
